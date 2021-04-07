@@ -1,0 +1,826 @@
+
+/*######################################################*/
+/*Attention ! Design responsive jusqu'à 1000px pour ordi*/
+/*######################################################*/
+
+
+
+
+            /*##########################*/
+            /*==========================*/
+            /*Definition contenu general*/
+            /*==========================*/
+            /*##########################*/
+
+
+
+
+
+* {
+    font-family: 'Arial Black';
+}
+
+body {
+    display: flex;
+}
+
+                /*#################*/
+                /*=================*/
+                /*Sidebar conteneur*/
+                /*=================*/
+                /*#################*/
+
+#sideBar {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+    background-color: #212020;
+    min-width: 15%;
+    max-width: 16%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#sideBar img {
+    height: 100px;
+    width: 100px;
+    border: white 2px solid;
+    border-radius: 100%;
+}
+
+#sideBar p {
+    font-size: larger;
+}
+
+#buttonContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 50%;
+    padding: 5%;
+}
+
+#buttonContainer a {
+    background-color: aliceblue;
+    color: #212020;
+    font-size: x-large;
+    font-variant: small-caps slashed-zero;
+    padding: 10px;
+    border: #212020 1px solid;
+    border-radius: 25%;
+}
+
+#buttonContainer #survival {
+    background-color: green;
+    color: aliceblue;
+}
+
+#options img {
+    border: none;
+    margin-bottom: 8%;
+}
+
+
+/*======================================================*/
+/*======================================================*/
+/*======================================================*/
+
+
+
+/*Definition conteneur principal*/
+
+#mainContainer {
+    flex: 1;
+    
+}
+
+
+            /*################*/
+            /*================*/
+            /*Conteneur survie*/
+            /*================*/
+            /*################*/
+
+
+
+.createNewPageButton {
+    border: aliceblue 2px solid;
+    background-color: aliceblue;
+    color: #212020;
+    padding: 1%;
+    border-radius: 25%;
+}
+
+#survivalContainer {    
+    display: block;
+    max-width: 100%;
+    justify-content: end;
+    padding: 1%;
+}
+
+#survivalContainer div {
+    display: flex;
+    flex-direction: inline;
+    justify-content: end;
+}
+
+#survivalContainer article {
+    background-color: rgba(156, 156, 156, 0.5);
+    margin: 1%;
+    padding: 1%;
+}
+
+
+#survivalContainer div section {
+    flex: 0.4;
+    display: flex;
+    flex-direction: column;
+}
+
+#survivalContainer h2 {
+    margin: 1%;
+}
+
+/*#####################*/
+/*Player Bank Container*/
+/*#####################*/
+
+#survivalContainer div #playerBankContainer {
+    flex: 0.4;
+}
+
+#playerBankContainer fieldset {
+    border-width: 5px;
+    font-variant: small-caps;
+    display: flex;
+    justify-content: space-around;
+}
+
+#playerBankContainer fieldset input{
+    flex: 1;
+    margin: 1%;
+    padding: 1%;
+    color: #212020;
+}
+
+#playerBankContainer fieldset input:focus{
+    border: green 3px solid;
+}
+
+.transactionSubmit {
+    background-color: darkgray;
+    border-radius: 25%;
+}
+
+.transactionSubmit:focus {
+    border: none;
+    background-color: green;
+    border-radius: 25%;
+}
+
+#economicActivityGraphContainer, #economicActivityContainer {
+    margin: 1% 0 3% 0;
+    min-height: 150px;
+    max-height: 200px;
+    overflow: scroll;
+    min-width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: left;
+}
+
+#playerBankContainer h3 {
+    margin: 2%;
+
+}
+
+#transactionList {
+    border: #212020 1px solid;
+    width: 100%; 
+}
+
+#transactionList td {
+    border: #212020 1px solid;
+    border-bottom: none;
+    color: #212020;
+    
+}
+
+/*#####################*/
+/*Achivements container*/
+/*#####################*/
+
+
+#survivalContainer #achivementsContainer {
+    padding-bottom: 2%;
+}
+
+#survivalContainer #achivementsContainer #achivementsList {
+    margin: 1% 0 3% 0;
+    min-height: 150px;
+    max-height: 200px;
+    overflow: scroll;
+    min-width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+}
+
+#survivalContainer #achivementsContainer #achivementsList #achivementsTable {
+    border: #212020 1px solid;
+    min-height: 150px;
+    max-height: 200px;
+    width: 100%;
+}
+
+#achivementsTable td {
+    max-height: 10px;
+    border: #212020 1px solid;
+    border-bottom: none;
+    color: #212020;
+    
+}
+
+#survivalContainer #achivementsContainer form {
+    display: flex;
+    flex-direction: inline;
+    justify-content: space-around;
+}
+
+#survivalContainer #achivementsContainer form div label{
+    margin-left: 5px;
+}
+
+
+/*###############*/
+/*Homes Container*/
+/*###############*/
+
+#homesContainer {
+    padding-bottom: 2%;
+}
+
+
+#homesList {
+    margin: 1% 0 3% 0;
+    max-height: 150px;
+    overflow: scroll;
+    min-width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+}
+
+#homesTable {
+    border: #212020 1px solid;
+    min-height: 150px;
+    max-height: 200px;
+    width: 100%;
+}
+
+#homesTable td {
+    border: #212020 1px solid;
+    border-bottom: none;
+    color: #212020;
+    
+}
+
+
+            /*#################*/
+            /*=================*/
+            /*Conteneur faction*/
+            /*=================*/
+            /*#################*/
+
+
+#factionContainer {    
+    display: none;
+    max-width: 100%;
+    justify-content: end;
+    padding: 1%;
+}
+
+#factionContainer div {
+    display: flex;
+    flex-direction: inline;
+    justify-content: end;
+}
+
+#factionContainer article {
+    background-color: rgba(156, 156, 156, 0.5);
+    margin: 1%;
+    padding: 1%;
+}
+
+
+#factionContainer div section {
+    flex: 0.4;
+    display: flex;
+    flex-direction: column;
+}
+
+#factionContainer h2 {
+    margin: 1%;
+}
+
+/*######################*/
+/*faction Bank Container*/
+/*######################*/
+
+#factionContainer div #factionBankContainer {
+    flex: 0.4;
+}
+
+#factionBankContainer fieldset {
+    border-width: 5px;
+    font-variant: small-caps;
+    display: flex;
+    justify-content: space-around;
+}
+
+#factionBankContainer fieldset input{
+    flex: 1;
+    margin: 1%;
+    padding: 1%;
+    color: #212020;
+}
+
+#factionBankContainer fieldset input:focus{
+    border: green 3px solid;
+}
+
+.transactionSubmit {
+    background-color: darkgray;
+    border-radius: 25%;
+}
+
+.transactionSubmit:focus {
+    border: none;
+    background-color: green;
+    border-radius: 25%;
+}
+
+#factionEconomicActivityGraphContainer, #factionEconomicActivityContainer {
+    margin: 1% 0 3% 0;
+    min-height: 150px;
+    max-height: 200px;
+    overflow: scroll;
+    min-width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: left;
+}
+
+#factionBankContainer h3 {
+    margin: 2%;
+
+}
+
+#factionTransactionList {
+    border: #212020 1px solid;
+    width: 100%; 
+}
+
+#factionTransactionList td {
+    border: #212020 1px solid;
+    border-bottom: none;
+    color: #212020;
+    
+}
+
+/*#######################*/
+/*FactionMember container*/
+/*#######################*/
+
+
+#factionContainer #factionMembersContainer {
+    padding-bottom: 2%;
+}
+
+#factionContainer #factionMembersContainer #factionMembersList {
+    margin: 1% 0 3% 0;
+    max-height: 150px;
+    overflow: scroll;
+    min-width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+}
+
+#factionContainer #factionMembersContainer #factionMembersList #factionMembersTable {
+    border: #212020 1px solid;
+    min-height: 150px;
+    max-height: 200px;
+    width: 100%;
+}
+
+#factionMembersTable td {
+    border: #212020 1px solid;
+    border-bottom: none;
+    color: #212020;
+    
+}
+
+#factionContainer #factionMembersContainer form {
+    display: flex;
+    flex-direction: inline;
+    justify-content: space-around;
+}
+
+#factionContainer #factionMembersContainer form div label{
+    margin-left: 5px;
+}
+
+
+/*###############*/
+/*Homes Container*/
+/*###############*/
+
+#FactionHomesContainer {
+    padding-bottom: 2%;
+}
+
+
+#factionHomesList {
+    margin: 1% 0 3% 0;
+    max-height: 150px;
+    overflow: scroll;
+    min-width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+}
+
+#factionHomesTable {
+    border: #212020 1px solid;
+    min-height: 150px;
+    max-height: 200px;
+    width: 100%;
+}
+
+#factionHomesTable td {
+    border: #212020 1px solid;
+    border-bottom: none;
+    color: #212020;
+    
+}
+
+
+            /*#################*/
+            /*=================*/
+            /*Conteneur Creatif*/
+            /*=================*/
+            /*#################*/
+
+
+#creativeContainer {
+    display: none;
+}
+
+
+#creativeContainer div {
+    display: flex;
+    flex-direction: inline;
+    justify-content: end;
+}
+
+#creativeTable {
+    border: aliceblue 2px solid;
+    width: 80%;
+    margin: 2%;
+    background-color: rgba(255, 255, 255, 0.4)
+}
+
+#creativeTable td {
+    border: aliceblue 1px solid;
+    border-bottom: none;
+    padding: 1%;
+    overflow: hidden;
+}
+
+
+            /*###############*/
+            /*===============*/
+            /*Conteneur Games*/
+            /*===============*/
+            /*###############*/
+
+
+#gameContainer {
+    display: none;
+    max-width: 100%;
+    justify-content: end;
+    padding: 1%;
+}            
+
+#gameContainer section {
+    display: flex;
+    flex-direction: inline;
+    justify-content: center;
+}
+
+#gameContainer section div{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+#gameContainer section div h2{
+    margin: 2%;
+}
+
+#gameContainer div section {
+    display: block;
+}
+
+#gameTabsMainContainer {
+    display: flex;
+    flex-direction: inline;
+}
+
+#gamesTab {
+    margin: 2%;
+    width: 100%;
+    display: inline-block;
+    font-variant: small-caps;
+}
+
+li {
+    background-color: #212020;
+    list-style: none !important;
+    color:#FFF;
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+     
+#gamesTab ul {
+    padding: 0;
+    margin: 0;
+}
+    
+#gamesTab ul li {
+    list-style: none;
+    line-height: 44px;
+    float: left;
+}
+    
+#gamesTab ul li a {
+    color:#FFF;
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+    
+li a:hover {
+    background-color: #212020;
+    border-bottom: 3px #FFF solid;
+}
+
+#gamesTab ul li ul { 
+    display: none;
+} 
+    
+#gamesTab ul li:hover ul { 
+    z-index: 99999;
+    display: list-item !important;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: -10px;
+}  
+    
+#gamesTab ul li:hover ul li {
+    float: none;
+}
+
+#iceFight {
+    display: none;
+}
+
+#pvpKitContainer div #pvpKitMainStats {
+    margin: 5%;
+    padding: 5%;
+    width: 100%;
+    border: 2px solid aliceblue;
+    text-align: center;
+}
+
+
+            /*###################*/
+            /*===================*/
+            /*Conteneur cosmetics*/
+            /*===================*/
+            /*###################*/
+
+
+#cosmeticsContainer {
+    display: none;
+    font-size: 4em;
+    font-family: 'Arial Black';
+    font-weight: bolder;
+}
+
+#cosmeticsContainer p {
+    margin-top: 20%;
+}
+
+#cosmeticsContainer .yellow {
+    color: yellow;
+}
+
+#cosmeticsContainer .dark {
+    color: #212020;
+}
+
+
+            /*##############*/
+            /*==============*/
+            /*chat Container*/
+            /*==============*/
+            /*##############*/
+
+
+#chatContainer {
+    display: none;
+}
+
+#mainContainerChat {
+    display: flex;
+    width: 100%;
+    flex-direction: inline;
+    justify-content: end;
+}
+
+#generalChatContainer, #fationChatContainer {
+    flex: 0.4;
+    margin: 1%;
+    padding: 1%;
+    border: aliceblue 5px solid;
+}
+
+#sendGeneralMessage fieldset, #fationChatContainer fieldset {
+    display: flex;
+    flex-direction: inline;
+}
+
+#sendGeneralMessage input, #fationChatContainer input {
+    border: 1px #212020 solid;
+    padding: 1%;
+    color: #111;
+    font-weight: bold;
+    margin: 1%;
+}
+
+#generalChat, #factionChat {
+    min-width: 100%;
+    min-height: 500px;
+    max-height: 500px;
+    background-color: aliceblue;
+    opacity: 0.3;
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+
+#factionMessage, #generalMessage {
+    flex: 1;
+}
+
+/*======================================================*/
+/*======================================================*/
+/*======================================================*/
+
+
+
+
+                    /*######*/
+                    /*======*/
+                    /*Footer*/
+                    /*======*/
+                    /*######*/
+
+
+
+
+
+
+/*##############*/
+/*transactionAsk*/
+/*##############*/
+
+
+#transactionAsk {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 100%; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: blue; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 1%; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 30px; /* 30px from the bottom */
+  }
+
+#confimTransaction{
+    margin: 1%;
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #212020;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 1);
+
+}
+
+#confimTransaction:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+#confimTransaction:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+/*##################*/
+/*transactionChecked*/
+/*##################*/
+
+  #transactionChecked {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: green; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 30px; /* 30px from the bottom */
+  }
+
+/*####################*/
+/*transactionUnchecked*/
+/*####################*/
+
+  #transactionUnchecked {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: red; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 30px; /* 30px from the bottom */
+  }
+  
+  /* Show the snackbar when clicking on a button (class added with JavaScript) */
+  #transactionAsk.show, #transactionChecked.show, #transactionUnchecked.show {
+    visibility: visible; /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+    However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  /* Animations to fade the snackbar in and out */
+  @-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+
+
+/*======================================================*/
+/*======================================================*/
+/*======================================================*/

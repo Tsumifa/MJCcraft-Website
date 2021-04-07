@@ -1,0 +1,47 @@
+form {
+    /*border: white 3px;*/
+    display: flex;
+    margin: 10% auto 0 auto;
+    flex-direction: column;
+    max-width: 25%;
+    min-width: 25%;
+    justify-content: center;
+    justify-items: center;
+}
+
+form p {
+    font-family: 'Arial';
+    text-align: justify;
+}
+
+input {
+    padding: 12px;
+    text-decoration: none;
+    border-radius: 10px;
+    opacity: 0.9;
+    margin: 5px 0 5px 0;
+    background-color: #817f7f;
+    color: black;
+}
+
+input:hoover {
+	opacity: 1;
+}
+
+input.button {
+	background-color: green;
+    color: white;
+    font-family: 'Arial Black';
+}
+
+.erreur {
+	color: red;
+}
+
+.requis {
+	color: red
+}
+
+.succes {
+	color:green
+}

@@ -1,0 +1,17 @@
+
+#mainContainer {
+    margin-top: 5%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+
+article {
+    background-color: none;
+    color: red;
+    border: none;
+}

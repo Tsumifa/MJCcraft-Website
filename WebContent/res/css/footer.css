@@ -1,0 +1,46 @@
+/*##################################*/
+/*      FOR MOBILE PLATFORMS        */
+/*##################################*/
+
+footer {
+	display: none;
+}
+
+
+/*##################################*/
+/*      	FOR DESKTOP		        */
+/*##################################*/
+
+@media screen and (min-width: 1000px) {
+
+	footer {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		background-color: #212121;
+		color: white;
+		padding: 0.5%;
+	}
+
+	footer nav {
+		width: 100%;
+	}
+
+	#socials {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+	}
+
+	footer a {
+		text-decoration: none;
+		color: white;
+		font-family: 'Arial';
+		margin-left: 1%;
+		margin-right: 1%;
+	}
+
+	footer a:hover {
+		color: white;
+	}
+}

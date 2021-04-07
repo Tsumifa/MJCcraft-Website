@@ -1,0 +1,9 @@
+@charset "ISO-8859-1";
+
+#commandsContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+@media screen and (min-width: 1000px) {}

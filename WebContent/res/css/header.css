@@ -1,0 +1,215 @@
+
+/*########################################*/
+/*        For mobile platformes           */
+/*########################################*/
+
+#header {
+  display: none;
+}
+
+#mobileHeader {
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	box-shadow: 3px 3px 3px #fafafa;
+}
+
+#content {
+  padding-top: 20%;
+	}
+
+.sidepanel  {
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #212121;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+
+#sidepanelMainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5%;
+  height: 100%;
+}
+
+/* FIXED HEADER */
+
+#headerNav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  padding: 2%
+}
+
+#openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #212121;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  margin-right: 2%;
+}
+
+#openbtn:hover {
+  background-color:#212121;
+}
+
+#searchSubmit {
+  color: white;
+  background-color: #51a47e;
+}
+
+#searchInput {
+  flex: 1;
+  width: 100%;
+}
+
+/* SIDEMENU HEADER */
+
+#sidepanelHeader {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  justify-content: center;
+  font-family: 'Arial';
+}
+
+#sidepanelHeader img {
+  width: 50px;
+  height: 50px;
+}
+
+#title {
+  font-size: 2em;
+  color: white;
+  font-weight: bolder;
+}
+
+/* MENU CONTAINER */
+
+#menuContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#menuContainer div{
+  margin-top: 5%;
+  width: 80%;
+}
+
+#menuContainer button {
+  width: 100%;
+}
+
+/* SOCIAL CONTAINER*/
+
+#socialsContainer {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  padding-right: 5%;
+}
+
+#socialsContainer a {
+  height: 100px;
+  width: 100px;
+  display: block;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#socialsContainer svg {
+  height: 100%;
+  width: 100%;
+}
+
+
+/*########################################*/
+/*              For desktop               */
+/*########################################*/
+
+@media screen and (min-width: 1000px) {
+
+  #sidepanel, #headerNav {
+    display: none;
+  }
+
+  #header {
+    display: block;
+    position: fixed;
+ 	z-index: 2;
+ 	top:0;
+ 	width: 100%;
+ }
+
+  #headerNavBar {
+    background-color: #212121;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1%;
+  }
+
+  #headerNavBar a {
+    color: white;
+    text-decoration: none;
+  }
+
+  #headerMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    margin-left: 3%;
+  }
+
+  #headerMenu .dropdown {
+    margin-left: 0.7%;
+  }
+
+  #headerTitle {
+    font-size: 2em;
+    color: white;
+    font-weight: bolder;
+    font-family: 'Arial';
+  }
+
+  #loginButton {
+    height: 50px;
+    width: 50px;
+  }
+
+  #content {
+    margin: none;
+    padding: 1%;
+  }
+
+}

@@ -1,0 +1,33 @@
+@charset "ISO-8859-1";
+
+/* MOBILE */
+
+#content {
+	padding-top: 2%;
+	width: 75%;
+	height: 50%;
+	margin: auto;
+	text-justify: inter-word;
+}
+
+#content h1 {
+	text-align: center;
+	font-family: 'Arial';
+	font-size: 2em;
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 1000px) {
+	
+	#content {
+		width: 50%;
+		height: 50%;
+		margin: auto;
+		margin-top: 5%;
+	}
+	#content h1 {
+		font-size: 4em;
+	}
+	
+}
